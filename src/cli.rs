@@ -10,6 +10,6 @@ use clap::Parser;
     long_about = None,
 )]
 
-struct Cli {
-    path: PathBuf,
+pub(crate) struct Cli {
+    pub(crate) path: Option<PathBuf>,
 }
